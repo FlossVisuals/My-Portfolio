@@ -1,4 +1,4 @@
-// welcome message 
+// welcome message .
 window.addEventListener("load", function () {
   alert("welcome to Floss Visuals! 👋");
 });
