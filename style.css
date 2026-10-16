@@ -60,11 +60,18 @@ nav a:hover{
 }
 .section h2{
   color: #0F766E;
+  text-align: center;
 }
 .section p{
   color: #334155;
+  text-align: center;
 }
 /* My skills Card*/
+.skill-cards{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .skill-card{
   background-color: #FFFFFF;
   Border: 1px solid #CCFBF1;
@@ -78,6 +85,7 @@ nav a:hover{
 }
 .skill-card p{
   color: #475569;
+  text-align: start;
 }
 /* My Goals Section */
 .section-goals{
@@ -147,3 +155,27 @@ nav a:hover{
 .back-to-top:hover{
   background-color: #0F766E;
 }
+/* Responsive */
+/* Tablet */
+@media (max-width: 768px){
+  
+  .section h2{
+    text-align: start;
+  }
+  .section p{
+    text-align: start;
+  }
+  .skill-cards{
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+  }
+  
+}
+
+/* Mobile Phones */
+@media (max-width: 480px){
+  
+  .skill-cards{
+  grid-template-columns: 1fr;
+  }
+  
+}  
